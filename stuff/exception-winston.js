@@ -46,9 +46,9 @@ const config = require('config');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-console.log(config.get('jwtPrivateKey'));
+// console.log(config.get('jwtPrivateKey'));
 winston.add(winston.transports.File, { filename: 'logfile.log' });
-winston.add(winston.transports.MongoDB, { db: 'mongodb://localhost/Mosh' });
+// winston.add(winston.transports.MongoDB, { db: 'mongodb://localhost/Mosh' });
 
 //connect to DB
 mongoose.connect('mongodb://localhost/Mosh', { useNewUrlParser: true });
