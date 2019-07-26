@@ -4,7 +4,7 @@ const config=require('config');
 module.exports = function () {
     //connect to DB
     // let db=config.get('dbPath');
-    let db='mongodb://adesheddie:gaming619@ds255577.mlab.com:55577/mosh';
+    let db='mongodb://localhost/Mosh';
     mongoose.connect(db, { useMongoClient:true })
         .then((connected) => {
             winston.info("DB Connected: "+db);
