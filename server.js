@@ -9,7 +9,7 @@ require('./startup/db')();
 // require('./startup/configs')();
 
 if (process.env.NODE_ENV !== 'test') {
-    app.listen(3001);
+    app.listen(process.env.PORT || 3001);
   }
 
 console.log('Node Running for Movies API');
